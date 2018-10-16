@@ -24,4 +24,24 @@ hugo new <SECTIONNAME>/<FILENAME>.<FORMAT>
 
 `http://127.0.0.1:1313/`
 
+## Hugo Themes
+
+### Minimal
+
+see <https://themes.gohugo.io/hugo-minimal>
+
+git branch is `theme-minimal`
+
+```shell
+git submodule add https://github.com/calintat/minimal.git themes/minimal
+git submodule init
+git submodule update
+```
+
+maintaining
+
+```shell
+git submodule update --remote themes/minimal
+```
+
 ---
