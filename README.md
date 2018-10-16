@@ -12,6 +12,23 @@ Initialize at existed directory.
 $ hugo new site --force .
 ```
 
+### Github Pages
+
+see <https://gohugo.io/hosting-and-deployment/hosting-on-github/>
+
+```shell
+hugo server -t <YOURTHEME>
+```
+
+see <http://localhost:1313>
+
+`rm -rf public` remove `public` directory.
+
+```shell
+git submodule add -b gh-pages git@github.com:stargazer8tw/stargazer8tw.github.io.git public
+```
+
+
 ### Write blog
 
 ```shell
