@@ -68,10 +68,11 @@ git checkout -b theme-minimal origin/theme-minimal
 git submodule init
 git submodule update
 ```
- execute `./publish_to_ghpages minimal`
+ execute `./publish_to_ghpages.sh minimal`
 
 ```shell
-#!/bin/sh <theme name>
+#!/bin/sh
+# usage ./publish_to_ghpages.sh <theme name>
 
 THEME="$1"
 
