@@ -6,12 +6,12 @@ theme = "minimal"
 googleAnalytics = ""
 
 [params]
-    author = "Calin Tataru"
-    description = "Personal blog theme powered by Hugo"
+    author = "Michael Lin"
+    description = "Technical notes and thought..."
     githubUsername = "#"
-    accent = "red"
-    showBorder = true
-    backgroundColor = "white"
+    accent = "#558B2F"
+    showBorder = false
+    backgroundColor = "#FEFEFE"
     font = "Raleway" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
