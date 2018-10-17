@@ -1,4 +1,5 @@
-#!/bin/sh <theme name>
+#!/bin/sh
+# usage ./publish_to_ghpages.sh <theme name>
 
 THEME="$1"
 
