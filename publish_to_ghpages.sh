@@ -1,8 +1,6 @@
 #!/bin/sh
 git checkout theme-minimal
 git rebase master
-git submodule update --remote themes/minimal
-git push --force origin theme-minimal
 
 DIR=$(dirname "$0")
 
@@ -14,6 +12,10 @@ then
     echo "The working directory is dirty. Please commit any pending changes."
     exit 1;
 fi
+
+# fix working directory before push changes into origin
+git submodule update --remote themes/minimal
+git push --force origin theme-minimal
 
 echo "Deleting old publication"
 rm -rf public
