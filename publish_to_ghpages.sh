@@ -1,5 +1,8 @@
-#!/bin/sh
-git checkout theme-minimal
+#!/bin/sh <theme name>
+
+THEME="$1"
+
+git checkout theme-$THEME
 git rebase master
 
 DIR=$(dirname "$0")
@@ -14,8 +17,8 @@ then
 fi
 
 # fix working directory before push changes into origin
-git submodule update --remote themes/minimal
-git push --force origin theme-minimal
+git submodule update --remote themes/$THEME
+git push --force origin theme-$THEME
 
 echo "Deleting old publication"
 rm -rf public
@@ -30,7 +33,7 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-hugo -t minimal
+hugo -t $THEME
 
 echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
