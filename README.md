@@ -68,15 +68,15 @@ git checkout -b theme-minimal origin/theme-minimal
 git submodule init
 git submodule update
 ```
-
-`publish_to_ghpages.sh`
+ execute `./publish_to_ghpages minimal`
 
 ```shell
-#!/bin/sh
-git checkout theme-minimal
+#!/bin/sh <theme name>
+
+THEME="$1"
+
+git checkout theme-$THEME
 git rebase master
-git submodule update --remote themes/minimal
-git push --force origin theme-minimal
 
 DIR=$(dirname "$0")
 
@@ -88,6 +88,10 @@ then
     echo "The working directory is dirty. Please commit any pending changes."
     exit 1;
 fi
+
+# fix working directory before push changes into origin
+git submodule update --remote themes/$THEME
+git push --force origin theme-$THEME
 
 echo "Deleting old publication"
 rm -rf public
@@ -102,7 +106,7 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-hugo -t minimal
+hugo -t $THEME
 
 echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
