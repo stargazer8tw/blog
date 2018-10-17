@@ -1,7 +1,7 @@
 ---
 title: "Java 11 JEP 335 Nashorn depreated!"
 date: 2018-10-16T14:51:46+08:00
-draft: true
+draft: false
 ---
 
 see <https://openjdk.java.net/jeps/335>
