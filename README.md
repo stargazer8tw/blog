@@ -49,7 +49,9 @@ git checkout theme-minimal
 
 ###### Build and Deployment
 
-`hugo -t minimal`
+`-D` for build draft posts.
+
+`hugo server -D -t minimal`
 
 ```shell
 rm -rf public
@@ -58,6 +60,14 @@ git push origin gh-pages
 ```
 
 ###### Script
+
+after clone
+
+```shell
+git checkout -b theme-minimal origin/theme-minimal
+git submodule init
+git submodule update
+```
 
 `publish_to_ghpages.sh`
 
