@@ -1,8 +1,13 @@
 #!/bin/sh
+git checkout theme-minimal
+git rebase master
+git submodule update --remote themes/minimal
+git push --force origin theme-minimal
 
 DIR=$(dirname "$0")
 
-cd $DIR/..
+# not required?
+# cd $DIR/..
 
 if [[ $(git status -s) ]]
 then
@@ -23,7 +28,8 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-hugo
+hugo -t minimal
 
 echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
+git push origin gh-pages
