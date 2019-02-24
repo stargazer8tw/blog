@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://stargazer8tw.github.io/blog/posts/programming-language-vulnerability/</loc>
+    <lastmod>2019-02-24T09:42:42+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://stargazer8tw.github.io/blog/tech/vscode/</loc>
     <lastmod>2018-11-02T15:10:48+08:00</lastmod>
   </url>
@@ -19,13 +24,13 @@
   
   <url>
     <loc>https://stargazer8tw.github.io/blog/</loc>
-    <lastmod>2018-11-02T15:10:48+08:00</lastmod>
+    <lastmod>2019-02-24T09:42:42+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://stargazer8tw.github.io/blog/posts/</loc>
-    <lastmod>2018-10-16T14:51:46+08:00</lastmod>
+    <lastmod>2019-02-24T09:42:42+08:00</lastmod>
     <priority>0</priority>
   </url>
   

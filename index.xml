@@ -6,10 +6,24 @@
     <description>Recent content on Field of Dreams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Nov 2018 15:10:48 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Feb 2019 09:42:42 +0800</lastBuildDate>
     
 	<atom:link href="https://stargazer8tw.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Programming Language Vulnerability</title>
+      <link>https://stargazer8tw.github.io/blog/posts/programming-language-vulnerability/</link>
+      <pubDate>Sun, 24 Feb 2019 09:42:42 +0800</pubDate>
+      
+      <guid>https://stargazer8tw.github.io/blog/posts/programming-language-vulnerability/</guid>
+      <description>前一陣子與人討論關於是否需要經常更新 library 或程式語言版本. 對於程式語言版本更新, 個人是認為有必要積極的更新版本. 但是, 對方的看法則是沒有必要, 因為如果程式語言有漏洞需要更新並修改程式源碼是無法想像的事情, 就像是 OS 漏洞只需要更新 OS 底層, 並不會導致任何執行在 OS 的程式需要做出任何修改, 並詢問是否任何例子.
+最近剛好更新 Gitea 版本至最新版, 同時發現舊版本有個漏洞是基於 Go 的安全漏洞 CVE-2019-6486 Detail.
+這個漏洞修正導致 Gitea 必須重新建構
+ …term to prevent long busy loop
+If beta8 is unusually large, the addition loop might take a very long time to bring x3-beta8 back positive.
+This would lead to a DoS vulnerability in the implementation of the P-521 and P-384 elliptic curves that may let an attacker craft inputs to ScalarMult that consume excessive amounts of CPU.</description>
+    </item>
     
     <item>
       <title>Visual Studio Code</title>
