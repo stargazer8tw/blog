@@ -11,11 +11,13 @@ DIR=$(dirname "$0")
 # not required?
 # cd $DIR/..
 
-if [[ $(git status -s) ]]
-then
-    echo "The working directory is dirty. Please commit any pending changes."
-    exit 1;
-fi
+# 2019-02-24 script execution error in if statement
+# it was working in ubuntu 14.0, but not in ubuntu 18.04
+#if [[ $(git status -s) ]]
+#then
+#    echo "The working directory is dirty. Please commit any pending changes."
+#    exit 1;
+#fi
 
 # fix working directory before push changes into origin
 git submodule update --remote themes/$THEME
