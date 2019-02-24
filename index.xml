@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Field of Dreams</title>
+    <link>https://stargazer8tw.github.io/blog/</link>
+    <description>Recent content on Field of Dreams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Nov 2018 15:10:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://stargazer8tw.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visual Studio Code</title>
+      <link>https://stargazer8tw.github.io/blog/tech/vscode/</link>
+      <pubDate>Fri, 02 Nov 2018 15:10:48 +0800</pubDate>
+      
+      <guid>https://stargazer8tw.github.io/blog/tech/vscode/</guid>
+      <description> Visual Studio Code Extensions 2018-11-02
+ Docker 0.3.1 Go 0.6.93 Live Server 5.1.1 Markdown PDF 1.2.0 markdownlint 0.21.0  </description>
+    </item>
+    
+    <item>
+      <title>Java 11 JEP 335 Nashorn depreated!</title>
+      <link>https://stargazer8tw.github.io/blog/posts/java-11-jep335-nashorn/</link>
+      <pubDate>Tue, 16 Oct 2018 14:51:46 +0800</pubDate>
+      
+      <guid>https://stargazer8tw.github.io/blog/posts/java-11-jep335-nashorn/</guid>
+      <description>see https://openjdk.java.net/jeps/335
+ Deprecate the Nashorn JavaScript script engine and APIs, and the jjs tool, with the intent to remove them in a future release.
+ </description>
+    </item>
+    
+  </channel>
+</rss>
