@@ -1,5 +1,5 @@
 ---
-title: "Java 11 JEP 335 Nashorn depreated!"
+title: "Java 11 JEP 335 Nashorn deprecated!"
 date: 2018-10-16T14:51:46+08:00
 draft: false
 ---

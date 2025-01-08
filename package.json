@@ -1,0 +1,38 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "blog monorepo project",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "docs:dev": "pnpm -r -F \"{packages/*}\" docs:dev",
+    "docs:build": "pnpm -r -F \"{packages/*}\" docs:build",
+    "docs:preview": "pnpm -r -F \"{packages/*}\" docs:preview",
+    "lunaria:build": "pnpm -r -F \"{packages/*}\" lunaria:build",
+    "lunaria:preview": "pnpm -r -F \"{packages/*}\" lunaria:preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.20.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  },
+  "packageManager": "pnpm@9.15.0",
+  "dependencies": {
+    "@lunariajs/core": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "vitepress": "^1.5.0"
+  }
+}

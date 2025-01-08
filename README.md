@@ -1,4 +1,82 @@
+---
+title: Personal Blog
+date: 2025-01-08
+type: blog
+tags: vitepress
+---
+
 # Personal Blog
+
+Use [vitepress](https://vitepress.dev/)
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```shell
+pnpm install
+pnpm add -w -D @types/node vitepress @lunariajs/core
+cd packages/your-doc-project-name
+pnpm lunaria init
+```
+
+## Initialize Vitepress
+
+```shell
+cd packages
+pnpm vitepress init
+```
+
+### Compile and Hot-Reload for Development
+
+```shell
+pnpm docs:dev
+```
+
+This runs the end-to-end tests against the Vite development server.
+It is much faster than the production build.
+
+But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
+
+```shell
+pnpm docs:build
+pnpm docs:preview
+```
+
+lunaria
+
+```shell
+pnpm lunaria:build
+pnpm lunaria:preview
+```
+
+## Docker Build
+
+```shell
+application_name=blog
+os_distribution=alpine
+build_version=1.0.0
+build_image_name=node:18.20.5-alpine
+base_image_name=nginxinc/nginx-unprivileged:1.27.3-alpine
+docker build --force-rm \
+  --no-cache \
+  --compress \
+  --build-arg BUILD_IMAGE=$build_image_name \
+  --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') \
+  --build-arg BUILD_VERSION=$build_version \
+  --build-arg BUILD_REVISION=${build_revision:-$(date -u +'%Y%m%d%H%M%S')} \
+  --build-arg BASE_IMAGE=$base_image_name \
+  --build-arg APP_NAME=$application_name \
+  --file $(pwd)/docker/Dockerfile \
+  --tag "$application_name:$build_version-$os_distribution" .
+docker rmi $(docker images -f "dangling=true" -q)
+docker run --rm -ti \
+  --name $application_name \
+  -p 80:8080 \
+  "$application_name:$build_version-$os_distribution"
+```
 
 ## Hugo
 
