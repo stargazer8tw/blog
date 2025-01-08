@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export const shared = defineConfig({
   title: "Field of Dreams",
-  base: '/',
+  base: '/blog/',
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
