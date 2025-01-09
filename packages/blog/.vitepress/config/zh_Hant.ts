@@ -26,6 +26,13 @@ export const zhHant = defineConfig({
         items: [
           { text: 'VSCode', link: '/contents/zh_Hant/tech/vscode' }
         ]
+      },
+      {
+        text: 'Slide',
+        items: [
+          { text: 'Slidev Example (rewrite)', link: '/talks/slidev-example', target: '_new' },
+          { text: 'Slidev Example', link: '/slides/slidev-example/dist/index.html', target: '_new' }
+        ]
       }
     ],
     sidebar: [

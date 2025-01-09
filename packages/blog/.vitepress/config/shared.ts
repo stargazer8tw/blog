@@ -10,7 +10,6 @@ export const shared = defineConfig({
   },
   head: [
   ],
-
   themeConfig: {
     socialLinks: [
       {
@@ -18,5 +17,8 @@ export const shared = defineConfig({
         link: 'https://github.com/stargazer8tw/blog'
       }
     ]
+  },
+  rewrites: {
+    'slides/slidev-example/slides.md': 'talks/slidev-example/index.md',
   }
 })
