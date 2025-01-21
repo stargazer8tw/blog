@@ -64,5 +64,6 @@ export const zhHant = defineConfig({
     darkModeSwitchLabel: '模式',
     lightModeSwitchTitle: '淺色模式',
     darkModeSwitchTitle: '深色模式',
+    outlineTitle: '在此頁'
   }
 })
