@@ -17,6 +17,7 @@ export const zhHant = defineConfig({
       {
         text: 'Blog',
         items: [
+          { text: 'Vibe Coding with Claude Sonnet 4 (Part 1)', link: '/contents/zh_Hant/posts/vibe-coding-with-claude-sonnet4-part1.md' },
           { text: 'Java 11 JEP 335 Nashorn', link: '/contents/zh_Hant/posts/java-11-jep335-nashorn.md' },
           { text: 'Programming Language Vulnerability', link: '/contents/zh_Hant/posts/programming-language-vulnerability.md' }
         ]
@@ -32,6 +33,7 @@ export const zhHant = defineConfig({
       {
         text: 'Blog',
         items: [
+          { text: 'Vibe Coding with Claude Sonnet 4 (Part 1)', link: '/contents/zh_Hant/posts/vibe-coding-with-claude-sonnet4-part1.md' },
           { text: 'Java 11 JEP 335 Nashorn', link: '/contents/zh_Hant/posts/java-11-jep335-nashorn.md' },
           { text: 'Programming Language Vulnerability', link: '/contents/zh_Hant/posts/programming-language-vulnerability.md' }
         ]
